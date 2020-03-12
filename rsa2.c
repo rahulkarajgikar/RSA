@@ -31,7 +31,7 @@ void main()
     printf("\nENTER MESSAGE\n"); 
     fflush(stdin); 
     scanf("%s",msg); 
-    for(i=0;msg[i]!=NULL;i++) 
+    for(i=0;i<strlen(msg);i++) 
         m[i]=msg[i]; 
     n=p*q; 
     t=(p-1)*(q-1); 
@@ -116,8 +116,8 @@ void decrypt()
 { 
     long int pt,ct,key=d[0],k; 
     i=0; 
-    while(en[i]!=-1) 
-    { 
+    while(en[i]!=-1)
+     { 
         ct=temp[i]; 
         k=1; 
         for(j=0;j<key;j++) 
